@@ -1,13 +1,17 @@
 # OpenRocketVisualizer_web
 OpenRocketシミュデータ表示アプリのweb移植版
 
+## 環境 (サーバー運用者)
+- Docker
+- Git
+- Next.js
 
-## セットアップ
+## セットアップ (サーバー運用者)
 
 1. Repositoryをクローン
 ```{bash}
 git clone https://github.com/kuma003/OpenRocketVisualizer_web.git
-cd yOpenRocketVisualizer_web
+cd OpenRocketVisualizer_web
 ```
 2. ```.env```ファイルをコピー
 ```{bash}
@@ -26,5 +30,5 @@ docker-compose up --build
     - Email: ```admin@example.com```
     - Passward: ```admin```
 
-note:  
+#### note:  
 - ```.env```ファイルによってポートやDB情報を変更できます
