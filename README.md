@@ -23,12 +23,18 @@ docker-compose up --build
 ```
 
 ### URLS
-- フロントエンド: http://localhost:3000
+- フロントエンド: http://localhost:5173
 
-- ックエンドAPI: http://localhost:5000
+- バックエンドAPI: http://localhost:5000
 - pgAdmin: http://localhost:8080
     - Email: ```admin@example.com```
     - Passward: ```admin```
 
 #### note:  
 - ```.env```ファイルによってポートやDB情報を変更できます
+- docker関連を変更したときは, クリーンビルドを忘れずに実行します:
+```{bash}
+docker-compose down --rmi all --volumes --remove-orphans
+docker-compose build --no-cache
+docker-compose up
+```
