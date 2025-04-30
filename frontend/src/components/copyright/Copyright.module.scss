@@ -1,0 +1,17 @@
+.copyright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0px;
+  padding: 5px;
+  display: flex;
+  z-index: 1; /* Ensure it stays above the background */
+
+  p {    
+    margin: 0px;
+    padding: 0px;
+    font-size: 8pt;
+    color: #424242;
+    opacity: 0.6;
+  }
+}

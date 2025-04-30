@@ -1,12 +1,11 @@
 import React from 'react';
 import "./styles/global.css";
+import Background from './components/background';
 
 const App = () => {
 
   return (
-    <div>
-      
-    </div>
+      <Background />    
   );
 };
 
